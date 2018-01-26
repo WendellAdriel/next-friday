@@ -1,0 +1,49 @@
+{
+  "name": "next-friday",
+  "version": "1.0.0",
+  "description": "Simple app made just for fun",
+  "main": "index.html",
+  "repository": "https://github.com/WendellAdriel/next-friday",
+  "author": "Wendell Adriel <wendelladriel.ti@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "lint": "eslint ./src/** --color",
+    "precommit": "yarn lint",
+    "prepush": "yarn lint"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "github-pages": "^3.0.2",
+    "husky": "^0.14.3",
+    "parcel-bundler": "^1.5.1"
+  },
+  "github-pages": {
+    "remote": {
+      "user": "WendellAdriel",
+      "repo": "next-friday",
+      "ref": "heads/gh-pages"
+    },
+    "commit": {
+      "message": "Updated Github Page",
+      "author": {
+        "name": "Wendell Adriel",
+        "email": "wendelladriel.ti@gmail.com"
+      }
+    },
+    "src": "./dist"
+  }
+}
