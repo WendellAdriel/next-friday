@@ -9,6 +9,7 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
+    "deploy": "./node_modules/.bin/gh-pages-deploy",
     "lint": "eslint ./src/** --color",
     "precommit": "yarn lint",
     "prepush": "yarn lint"
@@ -29,23 +30,11 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "github-pages": "^3.0.2",
+    "gh-pages-deploy": "^0.4.2",
     "husky": "^0.14.3",
     "parcel-bundler": "^1.5.1"
   },
-  "github-pages": {
-    "remote": {
-      "user": "WendellAdriel",
-      "repo": "next-friday",
-      "ref": "heads/gh-pages"
-    },
-    "commit": {
-      "message": "Updated Github Page",
-      "author": {
-        "name": "Wendell Adriel",
-        "email": "wendelladriel.ti@gmail.com"
-      }
-    },
-    "src": "./dist"
+  "gh-pages-deploy": {
+    "staticpath": "dist"
   }
 }
