@@ -10,6 +10,8 @@ This project is built with:
 * **[Parcel Bundler](https://parceljs.org)**
 * **[ESLint](https://eslint.org)**
 * **[Husky](https://github.com/typicode/husky)**
+* **[Push.js](https://pushjs.org)**
+* **[Github Pages Deploy](https://github.com/meandavejustice/gh-pages-deploy)**
 * And others
 
 ## How to use
@@ -50,6 +52,12 @@ yarn lint
 
 ```
 yarn build
+```
+
+* To deploy the app to the **Github Pages** use
+
+```
+yarn deploy
 ```
 
 ## Git Hooks

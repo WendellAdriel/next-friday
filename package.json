@@ -17,6 +17,7 @@
   "dependencies": {
     "bulma": "^0.6.2",
     "moment": "^2.20.1",
+    "push.js": "^1.0.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
