@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --no-cache --public-url ./",
     "deploy": "./node_modules/.bin/gh-pages-deploy",
     "lint": "eslint ./src/** --color",
     "precommit": "yarn lint",
@@ -35,6 +35,7 @@
     "parcel-bundler": "^1.5.1"
   },
   "gh-pages-deploy": {
-    "staticpath": "dist"
+    "staticpath": "dist",
+    "noprompt": true
   }
 }
